@@ -54,7 +54,7 @@ app.post('/usuarios', async (req, res) => {
 
         // Insere no banco
         const query = `
-            INSERT INTO usuarios (nome, peso, altura, imc, classificacao)
+            INSERT INTO tb_imc (nome, peso, altura, imc, classificacao)
             VALUES ($1, $2, $3, $4, $5)
             RETURNING *
         `;
