@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 
 app.use(express.json());
 
-function calcularIMC(peso, altura) {
+function calcularIMC(peso, altura) { //função
     return peso / (altura * altura);
 }
 
